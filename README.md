@@ -1,2 +1,0 @@
-# artedu
-hello world
