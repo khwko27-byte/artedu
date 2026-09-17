@@ -1,56 +1,19 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>창원 미술·문화 공간 지도</title>
-<style>
-:root {
-  --paper:#eee4cf; --ink:#33291f; --brown:#715a43; --line:#bba789;
-  --panel:#f7f0df; --accent:#7c4e35;
-}
-* { box-sizing:border-box; }
-body { margin:0; background:#e8dfcf; color:var(--ink); font-family: "Noto Serif KR", Georgia, serif; }
-.page { max-width:1180px; margin:0 auto; padding:22px; }
-header { text-align:center; margin-bottom:16px; }
-h1 { margin:0 0 5px; font-size:clamp(25px,4vw,42px); letter-spacing:.08em; }
-.subtitle { color:#6e5b49; font-size:14px; }
-.layout { display:grid; grid-template-columns:minmax(0,1fr) 310px; gap:18px; align-items:start; }
-.map-card { background:var(--panel); border:1px solid var(--line); padding:10px; box-shadow:0 8px 24px #0001; }
-.map-wrap { position:relative; line-height:0; }
-.map-img { display:block; width:100%; height:auto; }
-.hotspot {
-  position:absolute; transform:translate(-50%,-50%); width:34px; height:34px;
-  border-radius:50%; border:2px solid #f7f0df; background:#7b4f38; color:white;
-  font-weight:700; cursor:pointer; box-shadow:0 2px 7px #0005;
-  display:grid; place-items:center; font-family:Georgia,serif; z-index:2;
-}
-.hotspot:hover,.hotspot:focus-visible { transform:translate(-50%,-50%) scale(1.12); outline:3px solid #a87b5d55; }
-.hotspot.active { background:#2f544a; }
-.note { font-size:12px; color:#766653; margin:8px 2px 0; line-height:1.5; }
-.panel { background:var(--panel); border:1px solid var(--line); padding:18px; box-shadow:0 8px 24px #0001; position:sticky; top:15px; }
-.panel h2 { margin:0 0 8px; font-size:22px; }
-.badge { display:inline-block; border:1px solid #b99d7c; padding:3px 7px; font-size:12px; margin-bottom:12px; }
-.address { line-height:1.7; margin:8px 0 14px; }
-.maplink { display:inline-block; padding:9px 12px; background:var(--accent); color:#fff; text-decoration:none; border-radius:4px; font-size:13px; }
-.list { margin-top:16px; border-top:1px solid var(--line); padding-top:12px; }
-.list button { width:100%; text-align:left; background:none; border:0; border-bottom:1px dashed #cdbca4; padding:9px 2px; cursor:pointer; color:inherit; font:inherit; }
-.list button:hover { background:#eee4cf; }
-.empty { color:#766653; line-height:1.7; font-size:14px; }
-footer { text-align:center; color:#786854; font-size:12px; margin-top:14px; }
-@media (max-width:800px) {
-  .page { padding:10px; }
-  .layout { grid-template-columns:1fr; }
-  .panel { position:static; }
-  .hotspot { width:30px;height:30px;font-size:12px; }
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="" href="">
+<title>창원특례시 미술·문화 공간 지도</title>
 </head>
+
 <body>
 <main class="page">
 <header>
-  <h1>창원 미술·문화 공간 지도</h1>
-  <div class="subtitle">옛 지도풍 회화 지도 위의 장소를 눌러 주소를 확인하세요</div>
+  <h1 class="tit">창원특례시 미술·문화 공간 지도</h1>
+  <div class="subtitle">지도 위의 장소를 눌러 주소를 확인하세요</div>
 </header>
 
 <div class="layout">
@@ -143,7 +106,7 @@ footer { text-align:center; color:#786854; font-size:12px; margin-top:14px; }
   </aside>
 </div>
 
-<footer>창원 미술·문화 공간 인터랙티브 지도 · 학교 과제용</footer>
+<footer>Copyright 2026. Kyungnam University Art Education. All rights reserved.</footer>
 </main>
 
 <script>
